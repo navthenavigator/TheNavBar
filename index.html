@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Navbar - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Fira+Code&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #0f0f0f;
+      --primary: #ffdd57;
+      --accent: #00ffd0;
+      --text: #f0f0f0;
+      --card-bg: #1e1e1e;
+      --highlight: #ff0077;
+    }
+
+    body {
+      font-family: 'Fira Code', monospace;
+      background-color: var(--bg-color);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      background-image: url('https://images.unsplash.com/photo-1514361892635-eae31cc8ab46?auto=format&fit=crop&w=1950&q=80');
+      background-size: cover;
+      background-attachment: fixed;
+      background-blend-mode: overlay;
+      background-color: rgba(0, 0, 0, 0.85);
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: rgba(15, 15, 15, 0.9);
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      color: var(--primary);
+    }
+
+    header p {
+      font-style: italic;
+      color: var(--accent);
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--highlight);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      color: var(--primary);
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255, 221, 87, 0.1);
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #111;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    .emoji {
+      font-size: 1.3rem;
+    }
+
+    a {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>&lt;The Navbar /&gt;</h1>
+    <p>Where Code Meets Cocktails 🍺💻</p>
+    <nav>
+      <a href="#taproom">Taproom</a>
+      <a href="#tales">Tales on Tap</a>
+      <a href="#brewer">Brewer Tools</a>
+      <a href="#cheers">Cheers!</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <section id="taproom">
+      <h2>Taproom: About Me</h2>
+      <div class="card">
+        <p>Welcome to my digital bar! I'm a passionate technologist with 5+ years of experience in implementation, support, and automating business processes. I serve clean code and chilled solutions, shaking up old systems with new-age innovations — all while keeping things on tap and on time.</p>
+      </div>
+    </section>
+
+    <section id="tales">
+      <h2>Tales on Tap</h2>
+      <div class="card">
+        <h3>🍺 Implementation Analyst @ FinTech Pub</h3>
+        <p>Managed end-to-end onboarding and conversion projects, optimized processes, and built tools that shaved hours off routine tasks.</p>
+      </div>
+      <div class="card">
+        <h3>🥂 Technical Support @ Domain Lounge</h3>
+        <p>Helped thousands build their websites and resolve tech issues over chats and calls—like bar talk, but for servers.</p>
+      </div>
+    </section>
+
+    <section id="brewer">
+      <h2>Brewery Tools</h2>
+      <div class="card">
+        <ul>
+          <li>🍻 Project Management | Process Automation | Change Brewing</li>
+          <li>🖥️ Windows, Linux, Shell Scripting | SQL & NoSQL</li>
+          <li>☁️ Cloud Computing | API Integration | Cybersecurity</li>
+          <li>🛠️ Excel Magic | CRM | Virtual Machines | SFTP, MOVEit</li>
+          <li>🧠 Security Concepts | Incident Response | SIEM</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="cheers">
+      <h2>Cheers & Contact</h2>
+      <div class="card">
+        <p>Let’s raise a glass to ideas. Whether it’s about building something cool or debugging over a beer, I’m open to chat.</p>
+        <p>Email: <em>[Hidden for privacy]</em></p>
+        <p>LinkedIn: <a href="#">linkedin </a></p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2025 The Navbar — Brewed with 💻 + 🍺 | Code Responsibly™
+  </footer>
+
+</body>
+</html>
